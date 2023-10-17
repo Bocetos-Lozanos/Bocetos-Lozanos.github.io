@@ -52,8 +52,33 @@ body{
 }
 
 .contenedor-logo{
-    width: 2%;
+    position: static;
+    width: 5%;
+    left: 1%;
 }
 .contenedor-logo__img{
+    position: static;
     width: 100%;
+    left: 2%;
+}
+
+.Nombre{
+    position:absolute;
+
+}
+.cont-form{
+    position: static;
+    display: flex;
+    flex:center;
+    flex-direction: column;
+    top: 10%;
+    left: 50%;
+}
+.cont-form__form{
+    position: static;
+    display: flex;
+    flex:center;
+    flex-direction: column;
+    top: 10%;
+    left: 50%;
 }
