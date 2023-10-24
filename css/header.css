@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+.header {
+    background-color: rgb(26, 26, 26);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    width: 100%;
+    height: 4%;
+}
+
+.logo-nombre{
+    display: flex;
+    align-items: center;
+    background-color: #998a6383;
+    border-radius: 10px;
+    transition: 0.2s;
+    margin: 5px 5px;
+
+}
+
+.logo-nombre img{
+    height: 60px;
+    margin-right: 10px ;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.barras{
+    display: none;
+}
+.menu ul {
+    display: flex;
+}
+.menu ul li a{
+    display: block;
+    color: #fff;
+    font-size: 15px;
+    padding: 10px 10px;
+    border-radius: 15px;
+    transition: 0.2s;
+    margin: 0 1px;
+    
+}
+
+.menu ul li a:hover{
+    background-color: #998a6383 ;
+}
+
+.menu ul li a.active{
+    background-color: #998a6383 ;
+}
+
+
+@media (max-width: 600px) {
+    .header{
+        padding: 0px 30px;
+    }
+    .barras{
+        display: block;
+        cursor: pointer;
+
+    }
+
+    .barras .barras__linea{
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        margin: 6px 0px;
+    }
+
+    .menu{
+        height: 0px;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background-color: rgb(26, 26, 26);
+        transition: 0.5s;
+        overflow: hidden;
+    }
+
+    .menu.active{
+        height: 450px;
+    }
+    .menu ul{
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .menu.active ul{
+        opacity: 1;
+
+    }
+
+    .menu ul li a{
+        margin-bottom: 20px;
+    }
+}

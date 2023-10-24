@@ -7,37 +7,50 @@
     <meta name="author" content="Andres Colorado Marin">
     <meta name="description"
     content="Sitio web enfocado en el arte">
-    <meta name="keywords" content="pintura, escultura, arte plastico, dibujo, canto, danza, baile, teatro, bonsai">
+    <meta name="keywords" content="Inicio, Acerca, Bocetos Lozanos, Iniciar sesión, comprar">
 
     <title>Bocetos Lozanos</title>
     <link rel="stylesheet" href="css/Style.css">
 </head>
 
 <body class="cuerpo">
+
     <header class="header">
+
+        <a href="index.html" class="logo-nombre">
+            <img src="img/BOCETOS LOZANOS.jpg" alt="Logo">
+            <h1 class="logo-nombre__nombre">Bocetos Lozanos</h1>
+        </a>
+        <div class="barras">
+            <div class="barras__linea"></div>
+            <div class="barras__linea"></div>
+            <div class="barras__linea"></div>
+        </div>
+
         <nav class="menu">
-            <div class="contenedor-logo">
-                <a href="index.html" class="menu__opcion"> <img src="img/BOCETOS LOZANOS.jpg" alt="Logo" class="contenedor-logo__img"></a>
-            </div>
-            <a href="compra.html" class="menu__opcion">¿Quieres comprar una obra?</a>
-            <a href="redes.html" class="menu__opcion">Acerca de</a>
-            <a href="form.html" class="menu__opcion">Iniciar sesión</a>
+            <ul>
+                <li>
+                    <a href="#comprar" class="menu__opcion">¿Quieres comprar una obra?</a>
+                </li>
+
+                <li>
+                    <a href="#nosotros" class="menu__opcion">Acerca de</a>
+                </li>
+
+                <li>
+                    <a href="#contacto" class="menu__opcion">Contactos</a>
+                </li>
+
+                <li>
+                    <a href="form.html" class="menu__opcion">Iniciar sesión</a>
+                </li>
+               
+            </ul>
         </nav>
 
     </header>
 
-    <div class="contenedor-fondo">
-        <img src="img/Fondo.jpg" alt="imagen de fondo" class="contenedor-fondo__img">
-        <div class="Nombre">
-            <h1>Bocetos Lozanos</h1>
-        </div>
-    </div>
-    <div class="contenedor-definición">
-        <h2 class="Tdefinicion">¿Que es el arte?</h2>
-        <p class="definicion">Lo que yo puedo definir como arte es aquella capacidad de una persona para exponer, liberar, conocer todo aquello que hay dentro de si,
-            esas cosas que normalmente no somos capaces de ver, pero que al utilizar cualquier metodo artistico, (el que mas nos guste o nos llene)
-             somos capaces de expresar; y con esta palabra se puede definir el arte; expresar. El arte es aquel siblime utencilio que usamos en la vida
-           para poder adquirir o trasmitir felicidad, conocimiento, alegria, plenitud, pena, tristeza. El arte, bien usada, puede hacerlo todo.</p>
-    </div>
+
+    <script src="js/header.js"></script>
 </body>
 </html>

@@ -1,84 +1,14 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;900&family=Pixelify+Sans:wght@500&family=Sedgwick+Ave+Display&display=swap');
-.header{
-    background-color: rgb(26, 26, 26);
-    text-align: center;
-    padding: 15px;
-    position:static;
-    top: 0%;
-    left: 0%;
-}
-.contenedor-fondo__img{
+  @import 'header.css';
+  @import "formstyle.css";
+
+.contenedor-banner__img{
     width: 100%;
     height: 100%;
     text-align: center;
 }
 body{
     font-family: 'Noto Serif JP', serif;
-}
-.Nombre{
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.contenedor-definicion{
-    width: 50%;
-    height: 50%;
-}
-.Tdefinicion{
-    text-align: center;
-    position: relative;
-}
-
-.definicion{
-    position: relative;
-    text-align: center;
-    width: 100%;
-    height: 50%;
-    border: 2px, solid, bl;
-}
-.cuerpo{
-
-}
-.menu{
-    display: flex;
-    justify-content: space-around;
-}
-.menu__opcion{
-    text-decoration: none;
-    color: white;
-    padding: 10px 20px;
-}
-
-.contenedor-logo{
-    position: static;
-    width: 5%;
-    left: 1%;
-}
-.contenedor-logo__img{
-    position: static;
-    width: 100%;
-    left: 2%;
-}
-
-.Nombre{
-    position:absolute;
-
-}
-.cont-form{
-    position: static;
-    display: flex;
-    flex:center;
-    flex-direction: column;
-    top: 10%;
-    left: 50%;
-}
-.cont-form__form{
-    position: static;
-    display: flex;
-    flex:center;
-    flex-direction: column;
-    top: 10%;
-    left: 50%;
+    margin: 0;
 }
