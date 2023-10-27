@@ -18,7 +18,7 @@
     <header class="header">
 
         <a href="index.html" class="logo-nombre">
-            <img src="img/BOCETOS LOZANOS.jpg" alt="Logo">
+            <img src="img/Logo.jpg" alt="Logo">
             <h1 class="logo-nombre__nombre">Bocetos Lozanos</h1>
         </a>
         <div class="barras">
@@ -28,21 +28,29 @@
         </div>
 
         <nav class="menu">
-            <ul>
-                <li>
+            <ul class="menu__list">
+                <li class="menu__item">
                     <a href="#comprar" class="menu__opcion">¿Quieres comprar una obra?</a>
                 </li>
 
-                <li>
+                <li class="menu__item">
                     <a href="#nosotros" class="menu__opcion">Acerca de</a>
                 </li>
 
-                <li>
+                <li class="menu__item">
                     <a href="#contacto" class="menu__opcion">Contactos</a>
                 </li>
 
-                <li>
-                    <a href="form.html" class="menu__opcion">Iniciar sesión</a>
+                <li class="login_item" id="login_item">
+                    <a href="login.html" class="menu__opcion">Iniciar sesión</a>
+                </li>
+
+                <li id="item_nombre" >
+                    <p id="nombre-usuario" class="menu__opcion"></p>
+                </li>
+
+                <li id="cerrar_sesion">
+                    <a href="index.html" class="menu__opcion" id="cerrar_sesion__link"></a>
                 </li>
                
             </ul>
@@ -50,7 +58,39 @@
 
     </header>
 
+    <div class="fondo">
+        <img src="img/Fondo.jpg" alt="Fondo" class="fondo__img">
 
+        <div class="nosotros">
+            <h2 class="acerca-de">Acerca de</h2>
+            <p class="acerca-de__def">
+                Somos una pagina web de venda de obras de arte, donde se busca promocionar el arte poco conocido y con un gran valor artistico.
+            </p><br>
+
+            <p class="acerca-de__def">
+                Buscamos que el contenido expuesto aca sea de calidad, donde no habra censura alguna sobre ningun tema.
+            </p>
+
+        </div>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div>
+        <h3>¿Quieres comprar una obra?</h3>
+        <p></p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/index.js"></script>
     <script src="js/header.js"></script>
 </body>
 </html>
