@@ -29,4 +29,6 @@ formRegistro.addEventListener("submit", function (e) {
     localStorage.setItem("listUsuarios", JSON.stringify(listUsuarios));
 
     window.location.href = "/login.html";
+
 });
+

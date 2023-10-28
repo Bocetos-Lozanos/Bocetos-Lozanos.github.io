@@ -7,17 +7,24 @@
   <link rel="stylesheet" href="css/formstyle.css">
   <title>Inicio de sesión</title>
 </head>
+
 <body>
     <form id="login">
       <section class="form">
+
         <h4>Inicio de sesión</h4>
         <input class="form__input" type="email" name="email" id="email" placeholder="Ingrese su Correo" required autofocus autocomplete="on">
         <input class="form__input" type="password" name="pass" id="pass" placeholder="Ingrese su Contraseña" required>
+
         <h4>¿No tiene cuenta?</h4>
-        <a href="signup.html" class="botons" type="submit">Registrarse</a>
-        <a href="#" class="botons" type="submit">Iniciar sesión</a>
+        <a href="signup.html" class="botons">Registrarse</a>
+        <a href="#" class="botons" type="submit" onclick="iniciarSesion()">Iniciar sesión</a>
+
       </section>
     </form>
+
     <script src="js/login.js"></script>
+
 </body>
+
 </html>
