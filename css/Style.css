@@ -3,11 +3,6 @@
   @import 'header.css';
   @import "formstyle.css";
 
-.contenedor-banner__img{
-    width: 100%;
-    height: 100%;
-    text-align: center;
-}
 body{
     font-family: 'Noto Serif JP', serif;
     margin: 0;
@@ -25,6 +20,7 @@ body{
   grid-column-start: 1;
   grid-column-end: 6;
   z-index: -5;
+
 }
 
 .nosotros{
@@ -39,9 +35,64 @@ body{
 
 }
 
+.compras{
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  width: 35%;
+  border-radius: 20px;
+  position: relative;
+  position: absolute;
+  top: auto;
+  transform: translate(95%);
+
+}
+.compras__img{
+
+  width: 90%;
+  height: auto;
+  padding-top: 20px;
+  padding-left: 50px;
+
+
+}
+
+.descripcion{
+  padding-left: 40px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 10px;
+  margin: 5px;
+  background-color: rgb(218, 223, 223);
+}
+
+
 @media (max-width: 600px) {
   .nosotros{
     grid-row-start: 2;
     grid-row-end: 5;
+  }
+
+  .compras{
+    font-size: 11px;
+    margin: 10px;
+    width: auto;
+    position: relative;
+    position: absolute;
+    top: auto;
+    transform: translate(0%);
+  }
+
+  .compras__img{
+
+    width: 100%;
+    height: auto;
+    padding: 20px;
+
+  }
+
+  .descripcion{
+    padding-left: 13px;
   }
 }
