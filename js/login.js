@@ -16,7 +16,11 @@ function iniciarSesion(){
         localStorage.setItem("usuariologueado", JSON.stringify(verificar));
         window.location.href = "/";
     
+    } else{
+        alert("Usuario o contraseña incorrectos")
     }
+
+
 }
 
 
