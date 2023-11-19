@@ -2,6 +2,7 @@
   @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;900&family=Pixelify+Sans:wght@500&family=Sedgwick+Ave+Display&display=swap');
   @import 'header.css';
   @import "formstyle.css";
+  @import "footer.css";
 
 body{
     font-family: 'Noto Serif JP', serif;
@@ -30,7 +31,7 @@ html{
   grid-column-start: 2;
   grid-column-end: 5;
   grid-row-start: 3;
-  grid-row-end: 5;
+  grid-row-end: 3;
   border-radius: 10px;
   backdrop-filter: blur(5px) brightness(65%);
   z-index: -4;
@@ -38,6 +39,9 @@ html{
 
 }
 
+.nosotros p{
+  margin: 5px;
+}
 .compras{
   border-width: 1px;
   border-style: solid;
@@ -46,7 +50,7 @@ html{
   border-radius: 20px;
   position: absolute;
   top: auto;
-  transform: translate(95%);
+  transform: translate(91%);
   box-shadow: inset 3em 3em 3em rgba(0, 0, 0, 0.1),
   0 0 0 2px rgb(255, 255, 255),
   0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
@@ -57,9 +61,14 @@ html{
   width: 90%;
   height: auto;
   padding-top: 20px;
-  padding-left: 50px;
+  margin: 5%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  
+}
 
-
+.compras__img:hover{
+  transform: scale(1.1);
 }
 
 .descripcion{
@@ -81,7 +90,7 @@ html{
 
 .clientes-reseñas{
   position: absolute;
-  top: 460%;
+  top: 520%;
   background-color: #998a6383;
   border-radius: 100px;
   margin: 2%;
@@ -92,14 +101,22 @@ html{
 
 .clientes{
   position: absolute;
-  top: 480%;
+  top: 540%;
+  background: linear-gradient(to right,#58503a83, #998a6383);
+  width: 100%;
 
+}
+
+.clientes p{
+  width: 70%;
+  background-color: rgb(255, 255, 255);
 }
 
 .clientes__img{
   width: 10%;
   border-radius: 100%;
   margin-left: 5%;
+  margin-top: 2%;
 
 }
 
@@ -110,35 +127,34 @@ html{
   border-radius: 10px;
   margin: 2%;
   padding: 1%;
-  box-shadow:     inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
   0 0 0 2px rgb(255, 255, 255),
   0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 
 }
 
 
-@media (max-width: 1368px){
-  .clientes-reseñas{
-    top: 400%;
-  }
-
-  .clientes{
-    top: 420%;
-  }
-}
-
 @media (max-width: 900px ){
   .clientes {
-    top: 340%;
+    top: 390%;
   }
 
   .clientes-reseñas{
-    top: 320%;
+    top: 370%;
+  }
+
+  footer{
+    top: 400%;
   }
 }
 
 
 @media (max-width: 600px) {
+
+  .fondo__img{
+    width: 101%;
+    margin: 0%;
+  }
   .nosotros{
     grid-row-start: 2;
     grid-row-end: 6;
@@ -159,6 +175,7 @@ html{
     width: 100%;
     height: auto;
     padding: 20px;
+    margin: 0%;
 
   }
 
@@ -181,6 +198,10 @@ html{
     top: 460%;
   }
 
+  .footer{
+    top: 590%;
+  }
+
 }
 
 @media(max-width: 480px){
@@ -193,10 +214,14 @@ html{
   }
 
   .clientes-reseñas{
-    top: 390%;
+    top: 400%;
   }
 
   .clientes{
-    top: 410%;
+    top: 420%;
+  }
+
+  .footer{
+    top: 550%;
   }
 }

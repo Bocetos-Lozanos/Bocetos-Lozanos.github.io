@@ -1,8 +1,10 @@
-/*Pie de pagina*/
 .footer{
     background-color: rgb(26, 26, 26);  
     color: #fff;
     padding: 10px 0px;
+    position: absolute;
+    top: 790%;
+    width: 100%;
 }
 
 .footer-content{
@@ -30,8 +32,10 @@
 
 .footer-redes__img{
     width: 30px;
+    border-radius: 100%;
 }
 
 .footer-logo__img{
     width: 100px;
+    border-radius: 10px;
 }
