@@ -106,7 +106,7 @@ a{
     }
 
     .menu.active{
-        height: 450px;
+        height: 490px;
     }
     .menu ul{
         display: block;
@@ -130,5 +130,9 @@ a{
 @media (max-width: 440px) {
     .menu{
         top: 100px;
+    }
+
+    .menu.active{
+        height: 480px;
     }
 }
